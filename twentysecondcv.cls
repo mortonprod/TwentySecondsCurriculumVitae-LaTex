@@ -246,9 +246,10 @@
 \renewcommand{\bfseries}{\color{headercolor}}
 \newcommand{\twentyitem}[4]{%
   \hspace{5pt}#1&\parbox[t]{11.5cm}{%
-    \textbf{#2}%
+    \underline{\textbf{#2}}%
     \hfill%
-    {\footnotesize#3}\\%
+    \vspace{5pt}
+    {\color{mainblue} \footnotesize#3}\\%
     #4\vspace{\parsep}%
   }\\}
 
