@@ -246,7 +246,7 @@
 \renewcommand{\bfseries}{\color{headercolor}}
 \newcommand{\twentyitem}[4]{%
   \hspace{5pt}#1&\parbox[t]{11.5cm}{%
-    \underline{\textbf{#2}}%
+    #2%
     \hfill%
     \vspace{5pt}
     {\color{mainblue} \footnotesize#3}\\%
@@ -265,7 +265,7 @@
 \renewcommand{\bfseries}{\color{headercolor}}
 \newcommand{\twentyitemshort}[2]{%
   \hspace{5pt}#1&\parbox[t]{11.5cm}{%
-    \textbf{#2}%
+    #2%
   }\\}
 
 
