@@ -86,7 +86,7 @@
 \newcommand{\cvnumberphone}[1]{\renewcommand{\givennumberphone}{#1}}
 \newcommand{\cvaddress}[1]{\renewcommand{\givencvaddress}{#1}}
 \newcommand{\cvsite}[1]{\renewcommand{\givencvsite}{#1}}
-\newcommand{\aboutme}[1]{\renewcommand{\givenaboutme}{  \justifying#1}}
+\newcommand{\aboutme}[1]{\renewcommand{\givenaboutme}{ \newline#1}}
 \newcommand{\profilepic}[1]{\renewcommand{\givenprofilepic}{#1}}
 \newcommand{\cvname}[1]{\renewcommand{\givencvname}{#1}}
 \newcommand{\cvjobtitle}[1]{\renewcommand{\givencvjobtitle}{#1}}
@@ -195,40 +195,40 @@
 
 
 
-%%%%%%%%%%%%%%%%
-% Section Color box %
-%%%%%%%%%%%%%%%%
-\newcounter{colorCounter}
-\def\@sectioncolor#1#2#3{%
-  {%
-   \round{#1#2#3}{
-      \ifcase\value{colorCounter}%
-        maingray\or%
-        mainblue\or%
-        maingray\or%
-        mainblue\else%
-        maingray\fi%
-    }%
-  }%
-  \stepcounter{colorCounter}%
-}
-
-\renewcommand{\section}[1]{
-  \par%\vspace{\parskip}
-  {%
-    \LARGE\color{headercolor}%
-    \@sectioncolor #1%
-  }
-  \par\vspace{\parskip}
-}
-
-\renewcommand{\subsection}[1]{
-  \par\vspace{.5\parskip}%
-  {%
-  \large\color{headercolor} #1%
-  }
-  \par\vspace{.25\parskip}%
-}
+%%%%%%%%%%%%%%%%%
+%% Section Color box %
+%%%%%%%%%%%%%%%%%
+%\newcounter{colorCounter}
+%\def\@sectioncolor#1#2#3{%
+%  {%
+%   \round{#1#2#3}{
+%      \ifcase\value{colorCounter}%
+%        maingray\or%
+%        mainblue\or%
+%        maingray\or%
+%        mainblue\else%
+%        maingray\fi%
+%    }%
+%  }%
+%  \stepcounter{colorCounter}%
+%}
+%
+%\renewcommand{\section}[1]{
+%  \par%\vspace{\parskip}
+%  {%
+%    \LARGE\color{headercolor}%
+%    \@sectioncolor #1%
+%  }
+%  \par\vspace{\parskip}
+%}
+%
+%\renewcommand{\subsection}[1]{
+%  \par\vspace{.5\parskip}%
+%  {%
+%  \large\color{headercolor} #1%
+%  }
+%  \par\vspace{.25\parskip}%
+%}
 
 \pagestyle{empty}
 
@@ -248,7 +248,7 @@
   \hspace{5pt}#1&\parbox[t]{11.5cm}{%
     #2%
     \hfill%
-    \vspace{5pt}
+    \vspace{1pt}
     {\color{mainblue} \footnotesize#3}\\%
     #4\vspace{\parsep}%
   }\\}
