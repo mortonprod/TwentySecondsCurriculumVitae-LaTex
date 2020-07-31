@@ -86,6 +86,7 @@
 \newcommand{\cvnumberphone}[1]{\renewcommand{\givennumberphone}{#1}}
 \newcommand{\cvaddress}[1]{\renewcommand{\givencvaddress}{#1}}
 \newcommand{\cvsite}[1]{\renewcommand{\givencvsite}{#1}}
+\newcommand{\linkedsite}[1]{\renewcommand{\givenlinkedsite}{#1}}
 \newcommand{\aboutme}[1]{\renewcommand{\givenaboutme}{ \newline#1}}
 \newcommand{\profilepic}[1]{\renewcommand{\givenprofilepic}{#1}}
 \newcommand{\cvname}[1]{\renewcommand{\givencvname}{#1}}
@@ -99,6 +100,7 @@
 \newcommand{\givenaboutme}{}
 \newcommand{\givenprofilepic}{}
 \newcommand{\givencvsite}{}
+\newcommand{\givenlinkedsite}{}
 \newcommand{\givencvjobtitle}{}
 
 
@@ -171,6 +173,7 @@
 \ifthenelse{\equal{\givencvaddress}{}}{}{\textsc{\Large\icon{\Letter}} & \givencvaddress\\}
 \ifthenelse{\equal{\givennumberphone}{}}{}{\textsc{\Large\icon{\Telefon}} & \givennumberphone\\}
 \ifthenelse{\equal{\givencvsite}{}}{}{\textsc{\Large\icon{\Mundus}} & \givencvsite}\\
+\ifthenelse{\equal{\givenlinkedsite}{}}{}{\textsc{\Large\icon{\faLinkedinSquare}} & \givenlinkedsite}\\
 \ifthenelse{\equal{\givencvmail}{}}{}{\textsc{\large\icon{@}} & \href{mailto:\givencvmail}{\givencvmail}}
 \end{tabular}
 
